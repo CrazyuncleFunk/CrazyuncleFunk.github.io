@@ -50,6 +50,7 @@ p{
 
 
 }
+
 @media only screen and (max-width: 600px){
   #date-info{
   font-size:3vw;
@@ -60,33 +61,58 @@ p{
 
 
 }
-#float-bar{
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 0;
-  left:0;
-  width:100vw;
+@media only screen and (max-height: 600px){
+  #new-date{
+    font-size:30px
+  }
+  #date-info{
+  font-size:25px;
 }
-#float-bar:hover{
-  color:white;
+  p{
+  font-size:15px;
 }
-.bar{
-  text-decoration: none;
-  color:black;
 
+@media only screen and (max-height: 500px){
+  #new-date{
+    font-size:25px
+  }
+  #date-info{
+  font-size:20px;
 }
-ul{
-  display:flex;
-  text-decoration: none;
-  margin-right:35px;
+  p{
+  font-size:10px;
 }
-li{
-  font-size: 2em;
-  padding: 10px;
-  list-style: none;
 }
-.bar:hover{
-  color:white;
+  @media only screen and (max-height: 400px){
+   #new-date{
+    font-size:20px
+  }
+  #date-info{
+  font-size:15px;
+}
+  p{
+  font-size:10px;
+}
+}
+@media only screen and (max-height: 300px){
+   #new-date{
+    font-size:15px
+  }
+  #date-info{
+  font-size:10px;
+}
+  p{
+  font-size:5px;
+}
+}
+  @media only screen and (max-height: 200px){
+   #new-date{
+    font-size:10px
+  }
+  #date-info{
+  font-size:7px;
+}
+  p{
+  font-size:5px;
+}
 }
