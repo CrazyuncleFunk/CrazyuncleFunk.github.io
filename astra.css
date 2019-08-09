@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+#nasa-pic{
+  background-color:black;
+  font-family: 'Orbitron', sans-serif;
+  color:silver;
+  text-align:center;
+   background-position:center;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size:contain;
+}
+.container{
+
+  text-align:center;
+  margin:auto;
+  border-radius:1vh;
+
+}
+#text1{
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+#text-box{
+  background-color: white;
+  height:auto;
+  color:black;
+}
+#float-bar{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100vw;
+}
+
+.bar{
+  text-decoration: none;
+  color:white;
+}
+ul{
+  display:flex;
+  text-decoration: none;
+  margin-right:35px;
+}
+li{
+  font-size:2em;
+  padding: 10px;
+  list-style: none;
+  color:white;
+}
+.bar:hover{
+  color:grey;
+}
