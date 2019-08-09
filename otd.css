@@ -116,3 +116,31 @@ p{
   font-size:5px;
 }
 }
+#float-bar{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100vw;
+}
+
+.bar{
+  text-decoration: none;
+  color:black;
+}
+ul{
+  display:flex;
+  text-decoration: none;
+  margin-right:35px;
+}
+li{
+  font-size:2em;
+  padding: 10px;
+  list-style: none;
+  color:white;
+}
+.bar:hover{
+  color:grey;
+}
