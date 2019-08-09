@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+body{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  background-image:linear-gradient(270deg, blue,brown,black);
+  background-repeat:repeat;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height:100vh;
+  width:100vw;
+}
+#boxxy{
+margin-top:5%;
+}
+#bar{
+width:80%;
+margin-left:10vh;
+margin-right:10vh;
+}
+
+#quote-box{
+
+  margin:auto;
+
+  width:80vw;
+
+  background-image:linear-gradient(330deg, #f0f1ff,#ffe0e2);
+  border-radius:20vh;
+
+}
+#text{
+  text-align:center;
+  font-size:5vh;
+}
+#author{
+  text-align:right;
+  margin-right:7vh;
+  font-size:8vh;
+}
+
+
+#tweet-quote{
+font-size:16vh;
+float:left;
+ color:#1da1f2;
+}
+#tweet-quote:hover{
+  color:red;
+}
+.new-quote:hover{
+  background-color:red;
+}
+.new-quote{
+ font-size:3vw;
+ float:right;
+ //height:5vh;
+ padding:4vh;
+  //border-radius:60vh;
+  background:gray;
+  color:#e0efff;
+  margin-bottom:5vh;
+  flex:1;
+
+
+}
+#new-quote:focus {
+    outline: 0;
+}
+#dad-joke{
+
+}
+
+#text{
+  margin-left:5vh;
+  margin-right:5vh;
+  margin-top:5vh;
+}
+#float-bar{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100vw;
+}
+#float-bar:hover{
+  color:white;
+}
+.bar{
+  text-decoration: none;
+  color:black;
+}
+ul{
+  display:flex;
+  text-decoration: none;
+  margin-right:35px;
+}
+li{
+  font-size:2em;
+  padding: 10px;
+  list-style: none;
+}
+.bar:hover{
+  color:grey;
+}

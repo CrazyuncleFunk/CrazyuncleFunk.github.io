@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap');
+#bodie{
+  margin:0;
+  height:100vh;
+  width:100vw;
+  background-color:yellow;
+  display:flex;
+  font-family: 'Playfair Display SC', serif;
+
+}
+#card{
+  margin:auto;
+  height:60%;
+  width:60%;
+  background-color:#40392d;
+  text-align:center;
+  display:flex;
+  border-radius:2vh;
+}
+#inner-card{
+  background-color:#ffe7d0;
+  height:95%;
+  width:80%;
+  margin:auto;
+  display:flex
+}
+#inner-info{
+
+ margin:auto;
+
+}
+h1{
+  font-family: 'Bree Serif', serif;
+  font-size:3vw;
+}
+h2{
+  font-size:2vw;
+}
+p{
+  font-size:1vw;
+}
+
+#date-info{
+  font-size:1.5vw;
+}
+#bar{
+  position:relative;
+  bottom:0;
+
+
+}
+@media only screen and (max-width: 600px){
+  #date-info{
+  font-size:3vw;
+}
+  p{
+  font-size:1.5vw;
+}
+
+
+}
+#float-bar{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100vw;
+}
+#float-bar:hover{
+  color:white;
+}
+.bar{
+  text-decoration: none;
+  color:black;
+
+}
+ul{
+  display:flex;
+  text-decoration: none;
+  margin-right:35px;
+}
+li{
+  font-size: 2em;
+  padding: 10px;
+  list-style: none;
+}
+.bar:hover{
+  color:white;
+}
