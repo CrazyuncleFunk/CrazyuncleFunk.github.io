@@ -17,9 +17,7 @@ DADJOKE.addEventListener("click",function(){
   dadJoke();
 },false);
 
-/*NEWJOKE.addEventListener("click",function(){
-  newOne();
-},false);*/
+
 
 
 function openURL(url){
@@ -56,30 +54,7 @@ fetch(req ).then(function(result){
   console.log(err)
 });;
   };
-const newOne = () =>{
 
-const url = "https://joke3.p.rapidapi.com/v1/joke";
-let head = new Headers();
-head.append("X-RapidAPI-Host", "joke3.p.rapidapi.com")
-head.append("X-RapidAPI-Key", "5766f3ab18mshdf29754827636cfp167f93jsnb64c000dc209")
-head.append("accept", "application/json")
-
-let req = new Request(url, {
-    method:"GET",
-    headers:head
-})
-
-fetch(req ).then(function(result){
- return result.json();
-}).then(function(data){
-    joke = data.content;
-  current = joke;
-  TEXT.innerHTML = data.content;
-  console.log(data.content)
-}).catch((err)=>{
-  console.log(err)
-});
-  };
 
 const dadJoke = () =>{
   let req=new XMLHttpRequest();
