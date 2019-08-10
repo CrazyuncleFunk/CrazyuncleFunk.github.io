@@ -35,17 +35,17 @@ const NASA = ()=>{
 });
 }
 NASA();
-//This
+//This function changes the placeholder loading text to a discription of the nasa picture
 const TEXTCHANGE = ()=>{
   TEXT.innerHTML = pictureJson.contextWrites.to.explanation;
   INFO.innerHTML = "Click this box to hide it then click the title to see it again."
 };
 
-//
+//This listens for the box that contains the discription of the picture being click then hides the box
 BOX.addEventListener("click",function(){
 BOX.setAttribute("style", "display:none");
 }, false);
-//
+//This listens for the title being clicked with then show the discription box again
 TITLE.addEventListener("click",function(){
   BOX.setAttribute("style", "display:block")
 })
