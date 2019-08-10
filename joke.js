@@ -3,26 +3,28 @@ const CHUCK = document.getElementById("chuck-norris");
 const DADJOKE = document.getElementById("dad-joke");
 const NEWJOKE = document.getElementById("new-joke");
 const TWEET = document.getElementById("tweet-quote");
+//This varible will hold the current joke
 let current;
 
 
 
-
+//This listens for the chuck norris joke button and evokes the functions once clicked
 CHUCK.addEventListener("click",(clickObj)=>{
-newJoke();
+NEWCHUCK();
 },false);
 
-
+//This listens for the dad joke button and evokes the functions once clicked
 DADJOKE.addEventListener("click",function(){
-  dadJoke();
+  NEWDAD();
 },false);
 
 
 
-
+//This function takes a url and opens it in a 400px by 550px window
 function openURL(url){
   window.open(url, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
 }
+//This listens for the tweet button to be clicked the opens twitter with the joke copied into a tweet ready to post
 TWEET.addEventListener("click",()=>{
  openURL("https://twitter.com/intent/tweet?&text=" + encodeURIComponent(current))
 });
@@ -31,7 +33,8 @@ TWEET.addEventListener("click",()=>{
 
 
 let joke;
-const newJoke = () =>{
+//This function fetches a random chuck norris fact and changes the display text to the fact
+const NEWCHUCK = () =>{
 
 const url = "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random";
 let head = new Headers();
@@ -55,8 +58,8 @@ fetch(req ).then(function(result){
 });;
   };
 
-
-const dadJoke = () =>{
+//This fuction requests a random dad joke from the dad joke api then changes the display text to the joke
+const NEWDAD = () =>{
   let req=new XMLHttpRequest();
   req.open("GET","https://icanhazdadjoke.com/slack",true);
   req.send();
