@@ -69,6 +69,7 @@ li{
   height:550px;
   width:400px;
   background-color:white;
+  background-image: url(round.png);
 border:1px solid black;
 }
 .project-image{
@@ -77,6 +78,10 @@ border:1px solid black;
   width:350px;
   border:1px solid black;
   border-top: 0px
+}
+.project-tile:hover{
+  color:red;
+
 }
 .color{
   height:300px;

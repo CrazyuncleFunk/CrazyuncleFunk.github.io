@@ -33,8 +33,8 @@ h1{
 
 }
 #profile-link:hover{
-  background-image: none;
-  background-color:yellow;
+  background-image: url(floor-tile.png);
+  color:rgba(0,0,0,1.6);
     }
 .table{
   display:table;
@@ -43,7 +43,7 @@ h1{
 }
  .projects-grid{
   border:1px solid black;
-  background-color: white;
+  background-image: url(round.png);
   display:table-cell;
   width:15vw;
   height:25vh;
@@ -120,6 +120,7 @@ li{
 
 #container{
   background-color: #fff;
+  background-image: url(round.png);
   width:50vw;
   height:82vh;
   margin: auto;
