@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Average+Sans&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 body{
-  background-color: #18a611;
+  background-image:url(sakura.png);
   height:90vh;
   width:100vw;
   text-align: center;
@@ -27,13 +27,14 @@ h1{
 #profile-link{
   text-decoration:none;
   color:black;
-  background-color:#18a611;
+  background-image:url(sakura.png);
   padding:10px;
   margin-bottom: 50px;
 
 }
 #profile-link:hover{
-  background-color:white;
+  background-image: none;
+  background-color:yellow;
     }
 .table{
   display:table;
@@ -42,7 +43,7 @@ h1{
 }
  .projects-grid{
   border:1px solid black;
-  background-color: yellow;
+  background-color: white;
   display:table-cell;
   width:15vw;
   height:25vh;
@@ -118,7 +119,7 @@ li{
 }
 
 #container{
-  background-color: yellow;
+  background-color: #fff;
   width:50vw;
   height:82vh;
   margin: auto;
