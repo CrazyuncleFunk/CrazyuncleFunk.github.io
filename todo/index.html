@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../todo/index.css">
+</head>
+<body>
+<div id="app">
+  <h2>Things that must be done today:</h2>
+  <ul>
+    <li v-for="(todo,ind) in todos">
+      <label>
+       <i v-if="!todo.done"class="fa fa-circle-thin green-hover" @click="toggle(todo)"
+          :checked="todo.done"></i>
+       <i v-if="todo.done"class="fa fa-check green red-hover"@click="toggle(todo)"
+          :checked="todo.done"></i>
+       <del v-if="todo.done">
+         {{ todo.text }}
+
+        </del>
+
+        <span v-else-if="!todo.done">
+          {{ todo.text }}
+        </span>
+        <i class="fa fa-trash red-hover" @click="{deleteTodo(ind)}"></i>
+      </label>
+    </li>
+  </ul>
+  <label ><input type="text"class="bot-bar" v-model="addText"><button @click="newTodo(`${addText}`),addText ='' ">Add</button>
+  </label>
+</div>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<script type="text/javascript" src="../todo/index.js"></script>
+</body>
