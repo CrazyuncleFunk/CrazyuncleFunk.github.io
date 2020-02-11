@@ -60,10 +60,49 @@ nav{
 }
 .logo{
   background-image: url(round.png);
+  display:flex;
+}
+.title{
+  margin-left: 32%;
+  margin-right: 28%;
+}
+.menu{
+  display:inline-block;
+  font-size: 2em;
+}
+.menu:hover{
+  color:silver;
+}
+.drop-menu{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0,0,0.95);
+}
+.drop-ui{
+  margin-top: 20vh;
+}
+.drop-li{
+  margin-bottom: 4em;
+  border-bottom:none;
+}
+.drop-a{
+  font-size:2em;
+
+}
+.close{
+  font-size: 3em;
+  color:white
+}
+.close:hover{
+  color:yellow;
 }
 nav{
   background-color:black;
   background-image: url(dark-honeycomb.png);
+  display:none;
 }
 ul{
   list-style: none;
@@ -99,12 +138,16 @@ li:last-child{
     display:flex;
     width:100%;
   }
+  .menu{
+    display:none;
+  }
   nav{
     width:70%;
-
+    display:block;
   }
   .logo{
     width:30%;
+
   }
   ul{
     flex-direction: row;

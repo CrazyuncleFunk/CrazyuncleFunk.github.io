@@ -9,10 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=Average+Sans|Ubuntu:400,700&display=swap" rel="stylesheet">
  </head>
  <body>
+ <div id="app">
+
+
    <header>
      <div class="logo">
+       <div class="title">
        <h2 class="logo-head">Erin Dunn</h2>
        <p class="logo-subhead">Portfolio</p>
+     </div>
+       <i v-if="!dropMenu" class="fa fa-bars menu" @click="dropMenu = !dropMenu" ></i>
      </div>
      <nav>
        <ul>
@@ -22,6 +28,14 @@
        </ul>
      </nav>
    </header>
+   <div class="drop-menu" v-if="dropMenu" >
+     <i class="fa fa-window-close close" @click="dropMenu = !dropMenu" ></i>
+     <ul class="drop-ui">
+       <li class="drop-li"><a class="bar current-page drop-a" href="..\CrazyuncleFunk.github.io\index.html">Home</a></li>
+       <li class="drop-li"><a class="bar drop-a" href="..\CrazyuncleFunk.github.io\projects.html">Projects</a></li>
+       <li class="drop-li"><a class="bar drop-a" href="..\CrazyuncleFunk.github.io\contact.html">Contact</a></li>
+     </ul>
+   </div>
    <main>
   <h1 >Hello I'm Erin</h1>
   <p class="subtitle">A web developer</p>
@@ -30,7 +44,11 @@
    target="_blank" >My CodePen <i class="fab fa-codepen"></i></a>
     <a class="btn github-link" href="https://github.com/CrazyuncleFunk?tab=repositories"
       target="_blank" >My Github <i class="fab fa-github"></i></a>
+
   </div>
 </main>
+</div>
  </body>
+ <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+ <script type="text/javascript" src="../CrazyuncleFunk.github.io/index.js"></script>
 </html>
